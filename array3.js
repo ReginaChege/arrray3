@@ -13,12 +13,22 @@ return totalItems
 }
 console.log(additem(totalItems))
 
-function update(){
+function update(totalItems){
+totalItems.watermellon=80
+return totalItems
+}
+console.log(update(totalItems))
+
+function calculate() { 
+    const calculate=Object.values(totalItems);
+    const sum =calculate.reduce((accumulator,calculates)=>{
+        return accumulator+calculates;
+
+    },0) 
+    console.log(sum) 
 
 }
-function calculate() {
-    
-}
+calculate()
 function finditem() {
     
 }
